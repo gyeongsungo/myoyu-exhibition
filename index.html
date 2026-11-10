@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#343c3b">
+<meta name="description" content="수오 개인전 묘유 — 2026.11.17–11.29, 이예하 서편">
+<title>묘유 — 수오 개인전 | 이예하 서편</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Manrope:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#343d3b;--blue:#455b5c;--paper:#e8e2d5;--muted:#aaa99e;--line:rgba(232,226,213,.22);--serif:"Gowun Batang",serif;--sans:"Manrope",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:var(--serif);font-weight:400}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
+.topbar{position:absolute;z-index:5;top:0;left:0;width:100%;padding:28px 5vw;display:flex;justify-content:space-between;align-items:center;font-family:var(--sans);font-size:11px;letter-spacing:.16em;color:#e9e5dc}
+.topbar .brand{font-family:var(--serif);font-size:17px;letter-spacing:.12em}.topbar nav{display:flex;gap:28px}.topbar nav a{opacity:.78;transition:opacity .3s}.topbar nav a:hover{opacity:1}
+.hero{min-height:100svh;position:relative;display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,42%);align-items:center;gap:5vw;padding:110px 9vw 70px;background:linear-gradient(110deg,rgba(27,39,40,.3),rgba(27,39,40,.82)),url('assets/poster.jpg') center 42%/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(20,29,30,.55),transparent 38%,rgba(20,29,30,.18));pointer-events:none}
+.hero-copy,.poster-wrap{position:relative;z-index:1}.eyebrow{font-family:var(--sans);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#d1c9b9}
+.hero h1{font-size:clamp(74px,13vw,190px);font-weight:400;line-height:.95;letter-spacing:-.09em;margin:28px 0 22px}.hero .subtitle{font-size:clamp(17px,2vw,25px);letter-spacing:.16em;margin:0 0 52px;color:#ded8cb}.hero .date{font-family:var(--sans);font-size:12px;letter-spacing:.14em;line-height:2;color:#d0c9bd}
+.poster-wrap{justify-self:end;width:min(100%,370px);box-shadow:0 24px 70px rgba(0,0,0,.34);transform:rotate(1deg);transition:transform 1s}.poster-wrap:hover{transform:rotate(0) translateY(-5px)}.poster-wrap img{width:100%;height:auto}
+.scroll-note{position:absolute;z-index:2;bottom:28px;left:9vw;font-family:var(--sans);font-size:9px;letter-spacing:.22em;color:#d2cbbd}
+.section{padding:130px 10vw}.section-kicker{font-family:var(--sans);font-size:10px;letter-spacing:.25em;color:#b8b6a9;text-transform:uppercase;margin-bottom:36px}
+.intro{background:var(--paper);color:#414744;display:grid;grid-template-columns:1fr 1.5fr;gap:10vw}.intro .lead{font-size:clamp(27px,4vw,48px);line-height:1.55;letter-spacing:-.045em;margin:0}.intro .body{font-size:15px;line-height:2.25;word-break:keep-all;color:#5b615c}.intro .body p{margin:0 0 24px}.intro .signature{margin-top:42px;font-family:var(--sans);font-size:11px;letter-spacing:.12em;color:#777d74}
+.works{background:#d9d2c4;color:#414744;padding-top:110px;padding-bottom:130px}.works-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:55px}.works-head h2{font-size:clamp(38px,6vw,72px);font-weight:400;letter-spacing:-.06em;margin:0}.works-head span{font-family:var(--sans);font-size:10px;letter-spacing:.18em;color:#73776e}.gallery{display:grid;grid-template-columns:1.18fr .82fr;gap:7vw;align-items:center}.piece{margin:0}.piece img{width:100%;height:auto;filter:saturate(.82)}.piece:first-child{width:100%}.piece:nth-child(2){margin-top:130px}.piece figcaption{font-family:var(--sans);font-size:10px;letter-spacing:.12em;color:#73776e;margin-top:18px}
+.note{background:#455555;padding:120px 10vw;text-align:center}.note .mark{font-size:50px;color:#c3bcae;line-height:1;margin-bottom:32px}.note p{max-width:690px;margin:0 auto;font-size:clamp(20px,3vw,34px);line-height:1.9;letter-spacing:-.035em;color:#e4ded2}.note .small{font-family:var(--sans);font-size:10px;letter-spacing:.2em;color:#c0c0b4;margin-top:40px}
+.visit{background:#252e2e;padding:120px 10vw 90px}.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:8vw}.visit h2{font-size:clamp(44px,7vw,82px);font-weight:400;letter-spacing:-.07em;margin:0 0 40px}.visit dl{margin:0}.visit dl div{display:grid;grid-template-columns:100px 1fr;border-top:1px solid var(--line);padding:19px 0;gap:20px}.visit dt{font-family:var(--sans);font-size:10px;letter-spacing:.16em;color:#a9aca3}.visit dd{margin:0;font-size:15px;line-height:1.8}.visit .address{font-size:19px}.maplink{display:inline-block;margin-top:28px;border-bottom:1px solid #9da49b;padding-bottom:7px;font-family:var(--sans);font-size:10px;letter-spacing:.15em}
+.footer{padding:34px 5vw;display:flex;justify-content:space-between;gap:20px;align-items:center;background:#202828;color:#aeb1a7;font-family:var(--sans);font-size:9px;letter-spacing:.16em}.footer strong{font-family:var(--serif);font-size:15px;font-weight:400;letter-spacing:.12em;color:#e5dfd3}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}.reveal.visible{opacity:1;transform:none}
+@media(max-width:760px){.topbar{padding:22px 6vw}.topbar nav{gap:13px;font-size:9px}.hero{grid-template-columns:1fr;gap:38px;padding:120px 8vw 90px;min-height:auto}.hero h1{font-size:clamp(78px,22vw,130px);margin-top:20px}.hero .subtitle{margin-bottom:24px}.poster-wrap{justify-self:center;width:min(66%,290px);margin:0 auto 22px}.scroll-note{left:8vw}.section{padding:86px 8vw}.intro{grid-template-columns:1fr;gap:45px}.intro .lead{font-size:29px}.intro .body{font-size:14px}.works{padding:85px 8vw}.works-head{display:block}.works-head span{display:block;margin-top:15px}.gallery{grid-template-columns:1fr;gap:55px}.piece:nth-child(2){width:82%;margin:0 0 0 auto}.note{padding:90px 8vw}.visit{padding:88px 8vw}.visit-grid{grid-template-columns:1fr;gap:55px}.visit dl div{grid-template-columns:85px 1fr}.footer{padding:28px 6vw;flex-direction:column;align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#top">yiyeha SEOPYEON</a>
+  <nav><a href="#about">ABOUT</a><a href="#works">WORKS</a><a href="#visit">VISIT</a></nav>
+</header>
+<main>
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <div class="eyebrow">SUO — EXHIBITION / 2026</div>
+    <h1>묘유</h1>
+    <p class="subtitle">바람이 지나간 자리</p>
+    <div class="date">2026. 11. 17 TUE. — 11. 29 SUN.<br>1 — 6 PM &nbsp; / &nbsp; 22, 23 CLOSED</div>
+  </div>
+  <div class="poster-wrap"><img src="assets/poster.jpg" alt="수오 개인전 묘유 전시 포스터"></div>
+  <div class="scroll-note">SCROLL TO EXPLORE &nbsp; ↓</div>
+</section>
+
+<section class="section intro" id="about">
+  <div class="reveal">
+    <div class="section-kicker">THE EXHIBITION / 01</div>
+    <p class="lead">서로 다른 시간의 풍경이 포개져<br>하나의 섬이 된다.</p>
+  </div>
+  <div class="body reveal">
+    <p>이예하 서편은 수오 작가의 <strong>〈묘유〉</strong>와 함께 두 번째 문을 엽니다. 이 전시는 작가가 2022년 이후 처음 선보이는 개인전입니다.</p>
+    <p>작가는 2019년부터 보이는 것과 보이지 않는 것 사이를 살피며 시간이 쌓인 풍경의 이면을 바라봐 왔습니다. 이번 전시에서는 그렇게 마주한 섬의 속살을 ‘태’의 상으로 보여줍니다.</p>
+    <p>작업의 바탕이 되는 다중촬영에는 서로 다른 시간의 풍경이 겹쳐 있습니다. 자연광으로 노광한 청사진에 살림을 돌보며 얻은 자연물로 색을 입히고, 수분이 천천히 마르는 동안 짙푸른 빛이 남습니다. 돌과 오름의 형상이 포개져 둘이면서 하나인 덩어리를 이룹니다. 때로 씨앗처럼 보이는 이 덩어리에는 여러 가능성이 담겨 있습니다.</p>
+    <p>섬의 거센 바람과 미세한 기류 속에서 풍경은 계속 달라집니다. 서로 다른 때의 풍경이 한 화면에서 맞닿고, 그 마찰의 흔적이 표면에 남습니다. 그렇게 겹쳐진 풍경에는 섬의 어제와 오늘, 아직 오지 않은 내일이 함께 있습니다.</p>
+    <p>실마리를 엮는다는 뜻의 서편(緖編). 이번 전시 〈묘유〉에서는 수오 작가가 겹쳐 놓은 풍경을 실마리 삼아 섬의 시간을 들여다봅니다.</p>
+    <div class="signature">SUO — SOLO EXHIBITION / 2026</div>
+  </div>
+</section>
+
+<section class="section works" id="works">
+  <div class="works-head reveal"><div><div class="section-kicker">SELECTED IMAGES / 02</div><h2>겹쳐진 풍경</h2></div><span>TIME · TRACE · ISLAND</span></div>
+  <div class="gallery">
+    <figure class="piece reveal"><img src="assets/work-01.jpg" alt="수오 작품 — 나뭇가지와 안개가 겹쳐진 풍경"><figcaption>01 &nbsp; / &nbsp; LANDSCAPE, OVERLAPPED TIME</figcaption></figure>
+    <figure class="piece reveal"><img src="assets/work-02.jpg" alt="수오 작품 — 식생과 바위의 형상이 겹쳐진 풍경"><figcaption>02 &nbsp; / &nbsp; FORM, BETWEEN SEEN AND UNSEEN</figcaption></figure>
+  </div>
+</section>
+
+<section class="note">
+  <div class="mark">“</div>
+  <p class="reveal">풍경은 지나가지만,<br>그 시간이 남긴 표면은<br>오래도록 우리 곁에 머문다.</p>
+  <div class="small">WHERE MEANING UNFOLDS</div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="visit-grid">
+    <div class="reveal"><div class="section-kicker">INFORMATION / 03</div><h2>방문 안내</h2><div class="eyebrow">SUO — MYOYU</div></div>
+    <div class="reveal">
+      <dl>
+        <div><dt>EXHIBITION</dt><dd>수오 개인전 〈묘유〉</dd></div>
+        <div><dt>DATE</dt><dd>2026. 11. 17 (화) — 11. 29 (일)<br>기간 중 11. 22, 23 휴무</dd></div>
+        <div><dt>HOURS</dt><dd>오후 1시 — 6시</dd></div>
+        <div><dt>VENUE</dt><dd class="address">이예하 서편<br>서울 종로구 옥인3길 23</dd></div>
+      </dl>
+      <a class="maplink" href="https://map.kakao.com/link/search/서울%20종로구%20옥인3길%2023" target="_blank" rel="noopener">OPEN KAKAO MAP ↗</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="footer"><strong>yiyeha SEOPYEON</strong><span>WHERE MEANING UNFOLDS</span><span>SUO EXHIBITION · 2026</span></footer>
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){ entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  });
+},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
